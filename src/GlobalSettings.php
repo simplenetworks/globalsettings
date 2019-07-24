@@ -67,6 +67,11 @@ class GlobalSettings
         }
         return null;
     }
+    
+    public function getAll()
+    {
+        return (new static::$model)->where('active', 1)->get();
+    }
 
     /**
      * update an existing record
