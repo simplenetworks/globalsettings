@@ -1,13 +1,17 @@
 {
-    "name": "junaidnasir/globalsettings",
+    "name": "simplenetworks/globalsettings",
     "description": "Laravel global settings, set/get global settings for your app",
     "keywords": ["laravel", "settings", "options", "parameters"],
-    "homepage": "https://github.com/junaidnasir/globalsettings",
+    "homepage": "https://github.com/simplenetworks/globalsettings",
     "license": "MIT",
     "authors": [
         {
             "name": "Junaid Nasir",
             "email": "contact@junaidnasir.com"
+        },
+        {
+            "name":"Marco Rosetti",
+            "email":"marco.rosetti@simplenetworks.it"
         }
     ],
     "require": {
