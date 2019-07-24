@@ -7,7 +7,7 @@ Global Settings package for laravel, to quickly retrieve and store settings data
 Begin by installing the package through Composer. Run the following command in your terminal:
 
 ```bash
-composer require junaidnasir/globalsettings
+composer require simplenetworks/globalsettings
 ```
 
 add the package service provider in the providers array in `config/app.php`:
