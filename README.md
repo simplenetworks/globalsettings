@@ -1,6 +1,6 @@
 # Laravel Global Settings
-Global Settings package for laravel, to quickly retrieve and store settings data in DB.
 
+Global Settings package for laravel, to quickly retrieve and store settings data in DB.
 
 ## Installation
 
@@ -13,13 +13,13 @@ composer require simplenetworks/globalsettings
 add the package service provider in the providers array in `config/app.php`:
 
 ```php
-Junaidnasir\GlobalSettings\GlobalSettingsServiceProvider::class
+simplenetworks\GlobalSettings\GlobalSettingsServiceProvider::class
 ```
 
 you may add the facade access in the aliases array:
 
 ```php
-'GlobalSettings'  => Junaidnasir\GlobalSettings\Facades\GlobalSettings::class
+'GlobalSettings'  => simplenetworks\GlobalSettings\Facades\GlobalSettings::class
 ```
 
 publish the migration and config file:
@@ -34,10 +34,9 @@ migrate to create `global_settings` table
 php artisan migrate
 ```
 
-
 ## Usage
 
-You can use ***facade accessor*** to retrieve the package controller. Examples:
+You can use **_facade accessor_** to retrieve the package controller. Examples:
 
 ```php
 GlobalSettings::set('allowUserSignUp',0);
@@ -61,7 +60,7 @@ if (count($user->post) >= GlobalSettings::get('userPostLimit'))
 
 ```php
 /* Set or update setting
-*  $isActive is additional parameter 
+*  $isActive is additional parameter
 *  to quickly disable a setting without
 *  having to delete the setting
 */
@@ -73,7 +72,7 @@ set($Setting, $Value, $isActive = true);
 */
 get($Setting, $default = null);
 
-/* check if setting exists 
+/* check if setting exists
 * return true if setting exists
 * false otherwise
 */

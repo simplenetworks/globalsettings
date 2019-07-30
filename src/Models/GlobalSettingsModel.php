@@ -1,6 +1,6 @@
 <?php
 
-namespace Junaidnasir\GlobalSettings\Models;
+namespace simplenetworks\GlobalSettings\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

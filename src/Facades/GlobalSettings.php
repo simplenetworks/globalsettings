@@ -1,5 +1,5 @@
 <?php
-namespace Junaidnasir\GlobalSettings\Facades;
+namespace simplenetworks\GlobalSettings\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -14,11 +14,11 @@ class GlobalSettings
      * Invitation Model
      * @var string
      */
-    protected static $model = 'Junaidnasir\GlobalSettings\Models\GlobalSettingsModel';
+    protected static $model = 'simplenetworks\GlobalSettings\Models\GlobalSettingsModel';
 
     /**
      * Invitation Model
-     * @var Junaidnasir\GlobalSettings\Models\GlobalSettingsModel
+     * @var simplenetworks\GlobalSettings\Models\GlobalSettingsModel
      */
     private $instance = null;
 
@@ -154,7 +154,7 @@ class GlobalSettings
     }
 
     /**
-     * set $this->instance to Junaidnasir\GlobalSettings\Models\GlobalSettingsModel instance
+     * set $this->instance to simplenetworks\GlobalSettings\Models\GlobalSettingsModel instance
      * @param  string $name settings name
      * @return self
      */

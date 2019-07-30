@@ -33,7 +33,7 @@ class GlobalSettingsServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('globalSettings', function ($app) {
-            return new \Junaidnasir\GlobalSettings\GlobalSettings();
+            return new \simplenetworks\GlobalSettings\GlobalSettings();
         });
     }
 
