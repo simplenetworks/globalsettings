@@ -1,13 +1,13 @@
 <?php
 
-namespace Junaidnasir\GlobalSettings;
+namespace simplenetworks\GlobalSettings;
 
 use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 /**
-*   Laravel Invitation class
-*/
+ *   Laravel Invitation class
+ */
 class GlobalSettings
 {
     /**
@@ -15,13 +15,13 @@ class GlobalSettings
      * @var string
      */
     protected static $model = 'Junaidnasir\GlobalSettings\Models\GlobalSettingsModel';
-    
+
     /**
      * Invitation Model
      * @var Junaidnasir\GlobalSettings\Models\GlobalSettingsModel
      */
     private $instance = null;
-    
+
     /**
      * save settings or update record
      * @param string  $name   setting name
@@ -67,7 +67,7 @@ class GlobalSettings
         }
         return null;
     }
-    
+
     public function getAll()
     {
         return (new static::$model)->where('active', 1)->get();
@@ -145,9 +145,9 @@ class GlobalSettings
      */
     private function save($name, $value, $active = true)
     {
-        $this->instance->name      = $name;
-        $this->instance->value     = $value;
-        $this->instance->active    = $active;
+        $this->instance->name = $name;
+        $this->instance->value = $value;
+        $this->instance->active = $active;
         $this->instance->save();
 
         return $this;

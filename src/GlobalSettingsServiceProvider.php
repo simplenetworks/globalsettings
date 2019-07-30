@@ -1,6 +1,6 @@
 <?php
 
-namespace Junaidnasir\GlobalSettings;
+namespace simplenetworks\GlobalSettings;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -21,7 +21,7 @@ class GlobalSettingsServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/Migrations/' => base_path('/database/migrations')
+            __DIR__ . '/Migrations/' => base_path('/database/migrations'),
         ], 'migrations');
     }
 
