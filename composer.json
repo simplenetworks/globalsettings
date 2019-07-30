@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Junaidnasir\\GlobalSettings\\": "src"
+            "simplenetworks\\GlobalSettings\\": "src"
         }
     },
     "autoload-dev": {
